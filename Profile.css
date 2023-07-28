@@ -1,0 +1,120 @@
+.LeftSide{
+    display: flex;
+
+    align-items: center !important;
+    flex-direction: column;
+}
+
+.img-circle{
+    width: 200px;
+    height: 200px;
+}
+
+input[type="file"]{
+    margin-top: 10px;
+    width: 100px;
+    font-size: 10px;
+}
+
+/* Input container */
+.input-container {
+    position: relative;
+    margin: 20px;
+    display: inline;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+  
+
+  .RightSide{
+    margin-top: 100px !important;
+  }
+
+  .ChangePassContainer{
+    margin-bottom: 20px !important;
+    font-size: 20px;
+    font-weight: 800;
+    color: #603813;
+    margin-top: 20px !important;
+    transition: all ease .8s;
+    overflow: hidden;
+    height: 40px;
+
+}
+.submitBtn{
+    margin: 10px;
+    border-radius: 30px !important  ;
+    background-color: rgb(96 56 19) !important;
+    color: white !important;
+    width: 140px;
+    height: 50px;
+}
+
+.SubmitContainer{
+    display: flex; 
+    justify-content: end !important;
+    align-items: center;
+}
+
+.Togg{
+    height: 500px !important;
+}
+
+#ShowPassContainer{
+    height: 50px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#IconDown {
+    rotate: 00deg;
+}
+
+
+.ToggArrow{
+    rotate: 90deg;
+}

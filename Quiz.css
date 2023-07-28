@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+
+.form-check {
+    min-height: 50px !important;
+    display: flex !important;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #603813;
+}
+.submitBtn{
+    margin: 10px;
+    border-radius: 30px !important  ;
+    background-color: rgb(96 56 19) !important;
+    color: white !important;
+    width: 140px;
+    height: 50px;
+}
+label{
+    padding-right: 10px;
+}

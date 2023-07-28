@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصه القائد التعليمية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet" href="/cssFiles/css/all.min.css">
+    <link rel="stylesheet" href="/cssFiles/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Jomhuria&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="ClassStyle.css">
+</head>
+<body>
+
+
+
+    <nav class="nav nav-bar " style="border-bottom:2px solid rgb(96 56 19); height: auto; position: sticky; top: 0; background-color: white; z-index: 100;" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="Material/logo 1-PhotoRoom.png-PhotoRoom.png" width="250px" alt="">
+                </div>
+
+                <div class="NavBtnContainer">
+                        <a href="index.html" style="margin: 10px; color: #603813; text-decoration: none;font-family: 'Cairo', sans-serif !important;font-family: 'Jomhuria', cursive !important ;font-size: 30px;">تسجيل الخروج</a>
+                        
+                        <i class="fa-solid fa-user" style="background-color: #ddd; border-radius: 50%; font-size: 30px;"></i>
+                </div>
+
+
+            </div>
+            
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav" style="z-index: 1111;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="Profile.html">ملفي</a>
+        <a href="material.html">الحصص</a>
+        <a href="#">الترتيب</a>
+        <a href="#a1">عن المنصة</a>
+        <a href="index.html">تسجيل الخروج</a>
+    </div>
+    
+    
+
+    <span style="font-size:30px;cursor:pointer ; position: fixed; top: 20px; right: 20px; z-index: 1111;" onclick="openNav()">&#9776;</span>
+    
+
+
+    <section style="min-height: 500px; margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 LeftSide">
+                    <img src="images/Avatar.png" class="img-circle img-thumbnail" alt="avatar" style="border-radius: 50%;">
+                    <input type="file">
+                </div>
+                
+                <div class="col-lg-8 RightSide">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-container">
+                                <label>Name</label>
+                                <input placeholder="Enter text" class="input-field" value="Anton abdalla" disabled type="text">
+                                <label for="input-field" class="input-label">Enter text</label>
+                                <span class="input-highlight"></span>
+                            </div>
+        
+                            
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-container">
+                                <label>E-mail</label>
+                                <input placeholder="Enter text" class="input-field" value="antonabdalla30@gmail.com" disabled type="text">
+                                <label for="input-field" class="input-label">Enter text</label>
+                                <span class="input-highlight"></span>
+                            </div>
+        
+                            
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-container">
+                                <label>Phone Number</label>
+                                <input placeholder="Enter text" class="input-field" value="+201200835855" disabled type="text">
+                                <label for="input-field" class="input-label">Enter text</label>
+                                <span class="input-highlight"></span>
+                            </div>
+        
+                            
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="input-container">
+                                <label>Grade</label>
+                                <input placeholder="Enter text" class="input-field" value="الصف الثالث الثانوي" disabled type="text">
+                                <label for="input-field" class="input-label">Enter text</label>
+                                <span class="input-highlight"></span>
+                            </div>
+        
+                            
+                        </div>
+
+
+
+                        <div class="ChangePassContainer container">
+                            <div class="">
+                                <button id="ShowPassContainer" class="" style="font:inherit ; color: inherit; display: flex;">
+                                    
+                                    <div class="IconDown" style="margin-right: 5px; transition: all ease .2s;">
+                                        <i id="IconDown" class="fa-solid fa-caret-right"></i> 
+                                    </div>
+                                    CHANGE PASSWORD
+                                </button>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="input-container">
+                                        <input placeholder="Enter Old Password" class="input-field" value=""  type="password">
+                                        <label for="input-field" class="input-label">Enter Old Password</label>
+                                        <span class="input-highlight"></span>
+                                    </div>
+                
+                                    
+                                </div>
+        
+        
+                                
+                                <div class="col-lg-6">
+                                    <div class="input-container">
+                                        <input placeholder="Enter New Password" class="input-field" value=""  type="password">
+                                        <label for="input-field" class="input-label">Enter New Password</label>
+                                        <span class="input-highlight"></span>
+                                    </div>
+                
+                                    
+                                </div>
+                                
+                                <div class="col-lg-6">
+                                    <div class="input-container">
+                                        <input placeholder="Confirm Password" class="input-field" value=""  type="password">
+                                        <label for="input-field" class="input-label">Confirm Password</label>
+                                        <span class="input-highlight"></span>
+                                    </div>
+                
+                                    
+                                </div>
+        
+                                <div class="col-lg-12 SubmitContainer">
+                                    <input type="submit" value="تأكيد" class="submitBtn btn btn-danger">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+
+
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer style="border-top:2px solid rgb(96 56 19); margin-top: 50px; background-color:rgb(208 208 208 / 22%); box-shadow: 0px 5px 25px 9px rgba(0,0,0,0.1);
+    border-top-left-radius: 100px; ">
+        <div class="container" style="min-height: 200px; display: flex; justify-content: center; align-items: center;">
+            <div class="row" style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                <div class="col-lg-4" style="display: flex ; justify-content: center; align-items: center; flex-direction: column;">
+                    <li class="list-inline-item"><P style="font-size:20px ; font-weight: 600;">Follow Us</P></li>
+                    <ul class="FooterSocial list-unstyled list-inline">
+                        <li class="list-inline-item"> <i class="fa-brands fa-facebook" style="font-size: 40px;"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-instagram"  style="font-size: 40px;"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-youtube"  style="font-size: 40px;"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-whatsapp"  style="font-size: 40px;"></i></li>
+                    </ul>   
+                </div>
+                <div class="col-lg-4" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                        <h5><a href="" style="text-decoration: none; color: rgb(96 56 19);">عن المنصة</a> </h3>
+                            <h5><a href=""  style="text-decoration: none; color: rgb(96 56 19);">تواصل معنا</a> </h3>
+                        <h5><a href=""  style="text-decoration: none; color: rgb(96 56 19);">خدماتنا</a> </h3>
+                            
+                </div>
+                <div class="col-lg-4" style="display: flex; justify-content: end;">
+                    <img src="Material/logo 1-PhotoRoom.png-PhotoRoom.png" width="250px" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="a1" style="min-height: 40px; background-color: rgb(96 56 19); color: white; justify-content: center; display: flex; align-items: center;">
+            copyrights © Pwoerd By <a href="" style="text-decoration: none; color:white; padding-left: 2px;"> ATN</a>
+        </div>
+
+    </footer>
+
+    
+
+
+
+
+
+
+    <script src="profile.js"></script>
+    <script src="/cssFiles/js/all.min.js"></script>
+    <script src="/cssFiles/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

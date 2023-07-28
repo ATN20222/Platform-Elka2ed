@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصه القائد التعليمية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="VedioPage.css">
+    <link rel="stylesheet" href="/cssFiles/css/all.min.css">
+    <link rel="stylesheet" href="/cssFiles/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Jomhuria&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="ClassStyle.css">
+</head>
+<body>
+
+    <nav class="nav nav-bar " style="border-bottom:2px solid rgb(96 56 19); height: auto; position: sticky; top: 0; background-color: white; z-index: 100;" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="Material/logo 1-PhotoRoom.png-PhotoRoom.png" width="250px" alt="">
+                </div>
+
+                <div class="NavBtnContainer">
+                        <a href="" style="margin: 10px; color: #603813; text-decoration: none;font-family: 'Cairo', sans-serif !important;font-family: 'Jomhuria', cursive !important ;font-size: 30px;">تسجيل الخروج</a>
+                        
+                        <i class="fa-solid fa-user" style="background-color: #ddd; border-radius: 50%; font-size: 30px;"></i>
+                </div>
+
+
+            </div>
+            
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav" style="z-index: 1111;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="Profile.html">ملفي</a>
+        <a href="material.html">الحصص</a>
+        <a href="#">الترتيب</a>
+        <a href="#a1">عن المنصة</a>
+        <a href="index.html">تسجيل الخروج</a>
+    </div>
+    
+
+    <span style="font-size:30px;cursor:pointer ; position: fixed; top: 20px; right: 20px; z-index: 1111;" onclick="openNav()">&#9776;</span>
+    
+
+    <section  style="min-height: 600px;display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1>الحصة الاولي</h1>
+        <div class="container">
+            <div class="row" style="display: flex; justify-content: center; align-items: center ;">
+                <iframe class="embed-responsive-item col-lg-7   " src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fabanoub.shohdy.elsha3er%2Fvideos%2F188137650909701%2F&show_text=false&width=560&t=0"  height="400" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <button class="btn nextBtn">  << الحصة التالية </button>
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer style="border-top:2px solid rgb(96 56 19); margin-top: 50px; background-color:rgb(208 208 208 / 22%); box-shadow: 0px 5px 25px 9px rgba(0,0,0,0.1);
+    border-top-left-radius: 100px; ">
+        <div class="container" style="min-height: 200px; display: flex; justify-content: center; align-items: center;">
+            <div class="row" style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                <div class="col-lg-4" style="display: flex ; justify-content: center; align-items: center; flex-direction: column;">
+                    <li class="list-inline-item"><P style="font-size:20px ; font-weight: 600;">Follow Us</P></li>
+                    <ul class="FooterSocial list-unstyled list-inline">
+                        <li class="list-inline-item"> <i class="fa-brands fa-facebook" style="font-size: 40px;"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-instagram"  style="font-size: 40px;"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-youtube"  style="font-size: 40px;"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-whatsapp"  style="font-size: 40px;"></i></li>
+                    </ul>   
+                </div>
+                <div class="col-lg-4" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                        <h5><a href="" style="text-decoration: none; color: rgb(96 56 19);">عن المنصة</a> </h3>
+                            <h5><a href=""  style="text-decoration: none; color: rgb(96 56 19);">تواصل معنا</a> </h3>
+                        <h5><a href=""  style="text-decoration: none; color: rgb(96 56 19);">خدماتنا</a> </h3>
+                            
+                </div>
+                <div class="col-lg-4" style="display: flex; justify-content: end;">
+                    <img src="Material/logo 1-PhotoRoom.png-PhotoRoom.png" width="250px" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="a1" style="min-height: 40px; background-color: rgb(96 56 19); color: white; justify-content: center; display: flex; align-items: center;">
+            copyrights © Pwoerd By <a href="" style="text-decoration: none; color:white; padding-left: 2px;"> ATN</a>
+        </div>
+
+    </footer>
+
+    
+
+
+
+<script>
+    var head1 = document.querySelector(".head1");
+var head2 = document.querySelector(".head2");
+$(function(){
+    var partLeftPos = 0;
+    var partRightPos = 0;
+    
+    $(window).scroll(function(event) {
+      var distance = $(this).scrollTop() *2;
+      var left = partLeftPos - distance;
+      var right = partRightPos - distance;
+      
+      $('.left').css('left', left + "px");
+      $('.right').css('right', right + "px");
+
+      head2.style.display = "grid";
+
+
+      head1.style.top = "20%";
+      head2.style.top = "24%";
+      closeNav();
+    }); 
+  })
+
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+
+  
+</script>
+
+
+    <!-- <script src="material.js"></script> -->
+    <script src="/cssFiles/js/all.min.js"></script>
+    <script src="/cssFiles/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
